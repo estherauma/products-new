@@ -11,4 +11,11 @@ export const routes: Routes = [
     loadComponent: () =>
       import('./folder/folder.page').then((m) => m.FolderPage),
   },
+  {
+    path: 'add-product',
+    loadComponent: () =>
+      import('./pages/add-product/add-product.page').then(
+        (m) => m.AddProductPage
+      ),
+  },
 ];
